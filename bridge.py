@@ -51,7 +51,7 @@ x = ser.readline().strip('\n\r').split()
 # Status is list item '0'. Force to string.
 status = str(x[0])
 # List item '1' is the epoch timestamp reported from the Arduino RTC
-epoch = x[1]
+epoch = int(x[1])
 # List item '2' is the humidity value (0 - 100)
 humid = x[2]
 # List item '3' is the Temperature in Celsius
